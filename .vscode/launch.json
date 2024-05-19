@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "HHVM: Run Script",
+            "type": "hhvm",
+            "request": "launch",
+            "script": "${file}"
+        },
+        {
+            "name": "Listen for Xdebug 2 (Legacy)",
+            "type": "php",
+            "request": "launch",
+            "port": 9000
+        },
+        {
+            "name": "HHVM: Run Script",
+            "type": "hhvm",
+            "request": "launch",
+            "script": "${file}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/<executable file>",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
